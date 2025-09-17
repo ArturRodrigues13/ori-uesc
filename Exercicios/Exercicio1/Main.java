@@ -91,7 +91,7 @@ public class Main {
 
 		boolean status = diretorio.exists();
 
-		JOptionPane.showMessageDialog(null, "Diretório Existe" + status);
+		JOptionPane.showMessageDialog(null, "Diretório Existe: " + status);
 
 		if (status) {
 
@@ -119,7 +119,15 @@ public class Main {
 
 		System.out.println("Vamos fazer umas operações com arquivos!");
 
-		String path = "C:\\Teste";
+		System.out.println("Primeiro vamos definir o caminho do local onde criaremos nosso diretório de testes!");
+
+		System.out.println("Vou dar um exemplo de como deve ser feito: C:\\Euzinho\\Teste");
+
+		System.out.println("Neste caso, 'Teste' seria o diretório criado!");
+
+		System.out.print("Insira o caminho: ");
+
+		String path = input.nextLine();
 
 		File diretorio = CriarDiretorio(path);
 
